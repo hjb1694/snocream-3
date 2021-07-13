@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'Eraser';
+    src: url('./eraserdust-webfont.woff2') format('woff2');
+}
+
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing:border-box;
+    font-size:62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    padding:1rem;
+    box-shadow:0 0 .5rem rgba(0,0,0,.2);
+    background:rgba(255,255,255,.9);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:10;
+    height:10rem;
+}
+
+.header-logo{
+    width:23rem;
+}
+
+.nav{
+    display:flex;
+}
+
+.nav a{
+    display:block;
+    font-size:2.5rem;
+    margin:1rem;
+    color:#333;
+    font-weight:300;
+    text-decoration:none;
+}
+
+.hero {
+    height:80vh;
+    max-height:100rem;
+    display:relative;
+    margin-top:9.5rem;
+}
+
+#slideshow .slideshow-img{
+    height:80vh;
+    max-height:100rem;
+    width:100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.uk-position-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  
+.uk-transform-origin-center-left {
+transform-origin: 0 50%;
+}
+
+.uk-animation-reverse {
+animation-direction: reverse;
+animation-timing-function: ease-in;
+}
+
+.uk-animation-kenburns {
+animation-name: uk-scale-kenburns;
+animation-duration: 15s;
+}
+
+.uk-slideshow {
+-webkit-tap-highlight-color: transparent;
+height:80vh;
+max-height:100rem;
+}
+
+.uk-slideshow-items {
+position: relative;
+z-index: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+-webkit-touch-callout: none;
+height:80vh;
+max-height:100rem;
+}
+
+.uk-slideshow-items > * {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: hidden;
+will-change: transform, opacity;
+touch-action: pan-y;
+height:80vh;
+max-height:100rem;
+}
+.uk-slideshow-items > :focus {
+outline: none;
+}
+.uk-slideshow-items > :not(.uk-active) {
+display: none;
+}
+  
+@keyframes uk-scale-kenburns {
+0% {
+    transform: scale(1);
+}
+100% {
+    transform: scale(1.2);
+}
+}
+
+.hero-content{
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    min-width:25rem;
+    height:fit-content;
+    color:#fff;
+    font-size:8rem;
+    background:rgba(0,0,0,.6);
+    padding:2rem;
+    font-family: 'Lobster', cursive;
+    border-radius:0 1rem 1rem 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.about{
+    padding:5rem 2rem;
+}
+
+.section-heading{
+    font-size:5rem;
+    text-align:center;
+    transform:rotate(-2deg);
+    user-select: none;
+}
+
+.about-heading{
+    color:rgb(58, 83, 165);
+    font-family:'Lobster', cursive;
+}
+
+.loc-and-hours{
+    padding:5rem 3rem;
+}
+
+.loc-and-hours-heading{
+    color:#fff;
+    font-family:'Eraser';
+}
+
+.footer{
+    min-height:10rem;
+    background:rgb(32, 43, 82);
+    padding:2rem;
+    color:#fff;
+    text-align: center;
+    font-size:1.3rem;
+}
+
+.footer-link, 
+.footer-link:link,
+.footer-link:visited{
+    color:#fff;
+    text-decoration: none;
+}
+
+.about-content{
+    max-width:100rem;
+    font-size:2.5rem;
+    margin:2rem auto;
+    color:#444;
+    font-weight:300;
+    user-select: none;
+}
+
+.about-content strong{
+    background:linear-gradient(to bottom, transparent 60%, #d1daf7 60%)
+}
+
+
+.nav-toggle{
+    font-size:5rem;
+}
+
+.about-images{
+    max-width:60rem;
+    margin:4rem auto;
+    position:relative;
+    height:45rem;
+}
+
+.about-img{
+    width:25rem;
+    display:block;
+    position:absolute;
+    outline:4px solid rgb(21, 161, 21);
+    outline-offset:.5rem;
+}
+
+.loc-and-hours-content{
+    max-width:100rem;
+    margin:2rem auto 0 auto;
+}
+
+.loc-box, 
+.hours-box{
+    padding:2rem;
+    font-family: 'Eraser';
+    font-size:3rem;
+    color:#fff;
+    text-align:center;
+}
+
+.hours{
+    margin-top:2rem;
+}
+
+
+@media (max-width:600px){
+    .hero-content{
+        font-size:3.6rem;
+    }
+
+    .about-heading{
+        text-align:left;
+        font-size:4rem;
+    }
+
+    .about-content{
+        font-size:2rem;
+    }
+
+    .about-images{
+        height:45rem;
+    }
+
+    .about-img{
+        width:20rem;
+    }
+
+    .about-img--two{
+        left:3rem;
+        top:20rem;
+        z-index:5;
+    }
+
+
+    .about-img--three{
+        left:9rem;
+        top:10rem;
+        z-index:6;
+    }
+}
+
+@media (min-width:600px) {
+
+    .about-img--two{
+        left:15rem;
+        top:12rem;
+        z-index:5;
+    }
+
+
+    .about-img--three{
+        right:0;
+        top:4rem;
+        z-index:6;
+    }
+
+    .loc-and-hours-content{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        column-gap:4rem;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    .nav{
+        position:fixed;
+        left:0;
+        top:0;
+        width:0;
+        height:100vh;
+        overflow:hidden;
+        transition:.3s all;
+        transition-delay:.2s;
+        z-index:1001;
+        flex-direction:column;
+        white-space: nowrap;
+    }
+
+    .nav-backdrop{
+        position:fixed;
+        width:0;
+        height:100vh;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,.8);
+        transition:.3s all;
+        z-index:1000;
+    }
+
+    .nav.show{
+        width:25rem;
+        background:#fff;
+    }
+
+    .nav.show + .nav-backdrop{
+        width:100%;
+    }
+
+}
+
+@media (min-width:800px) {
+    .nav-toggle, 
+    .nav-backdrop{
+        display:none;
+    }
+}
+
+.ml9 {
+position: relative;
+}
+
+.ml9 .text-wrapper {
+position: relative;
+display: block;
+padding-top: 0.2em;
+padding-right: 0.05em;
+padding-bottom: 0.1em;
+overflow: hidden;
+}
+
+.ml9 .letter {
+transform-origin: 50% 100%;
+display: inline-block;
+line-height: 1em;
+}
+
+.loc-and-hours {
+    min-height:50rem;
+    background:url('./chalk_board_med.jpg') center / cover;
+}
+
+.address {
+    margin-top:2rem;
+}
+
+.loc-heading, 
+.hours-heading{
+    font-size:4rem;
+    text-decoration: underline;
+}
+
+
+.menu-section{
+    background:url('./chalk_board_med.jpg') center / cover;
+    height:82vh;
+    font-family:'Eraser', sans-serif;
+    color:#fff;
+    margin-top:10rem;
+    padding:2rem;
+    overflow-y:auto;
+}
+
+.menu-heading{
+    font-size:6rem;
+    text-align:center;
+    text-decoration: underline;
+}
+
+.menu-subheading{
+    font-size:5rem;
+    margin:5rem auto;
+    max-width:100rem;
+    text-align:center;
+}
+
+.sno-creams{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, 20rem);
+    margin:3rem auto;
+    max-width:100rem;
+    justify-content: center;
+    grid-gap:2rem;
+}
+
+.menu-tile{
+    height:20rem;
+    width:20rem;
+    padding:1rem;
+    background:#f2f2f2;
+    overflow:hidden;
+    position:relative;
+    transition: transform .3s;
+}
+
+.menu-tile:hover{
+    transform:scale(1.02);
+}
+
+.menu-tile img{
+    height:100%;
+    width:100%;
+    display:block;
+    object-fit: cover;
+    object-position: center;
+    box-shadow:0 0 1rem rgba(0,0,0,.3);
+}
+
+.caption{
+    background:rgba(0,0,0,.6);
+    font-size:2rem;
+    position:absolute;
+    bottom:2rem;
+    left:0;
+    width:100%;
+    padding:.5rem;
+}
+
+.tea-flavors, 
+.menu-other{
+    max-width:100rem;
+    margin:0 auto;
+}
+
+
+.tea-flavors h3{
+    font-size:3rem;
+    text-align:center;
+    margin-top:3rem;
+    text-decoration:underline;
+}
+
+.tea-flavors-list, 
+.pearls-list, 
+.other-list{
+    font-size:2.7rem;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:2rem;
+    justify-content:center;
+}
+
+.tea-flavors-list > *, 
+.pearls-list > *, 
+.other-list > * {
+    margin-right:3rem;
+    margin-bottom:1rem;
+}
+
+
