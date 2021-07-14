@@ -11,5 +11,9 @@ app.get('/menu', (req,res) => {
     res.status(200).sendFile(path.join(__dirname, 'public', 'menu.html'));
 });
 
+app.use('*', (req,res) => {
+    res.redirect('/');
+});
 
-app.listen(8000, () => console.log('Listening on port 8000!'));
+
+app.listen(3001, () => console.log('Listening on port 3001!'));
