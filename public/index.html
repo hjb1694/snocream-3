@@ -16,85 +16,89 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header-logo" src="./sno-cream-new-logo.png" alt="Sno Cream Logo"/>
-        <nav class="nav">
-            <a href="/">Home</a>
-            <a href="/menu">Menu</a>
-            <a href="#">Monthly Specials</a>
-        </nav>
-        <div class="nav-backdrop"></div>
-        <div class="nav-toggle">&equiv;</div>
-    </header>
-    <section class="hero">
-        <div id="slideshow" uk-slideshow="autoplay: true;">
-            <ul class="uk-slideshow-items">
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img class="slideshow-img" src="./slideshow_img/choco_cream-cropped.jpg"/>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img class="slideshow-img" src="./slideshow_img/blueberry_lover.jpg"/>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="hero-content">
-            <div class="ml9">
-                <span class="text-wrapper">
-                    <span class="letters">A Knoxville Favorite</span>
-                </span>
-            </div>
-        </div>
-    </section>
-    <section class="about">
-        <h2 class="section-heading about-heading">What is Sno Cream?</h2>
-        <p class="about-content">
-            Sno Cream is an inspired name from <strong>Subling</strong>, a popular south east
-            <strong>Asian</strong> shaved milk dessert which is originally from <strong>Korea</strong>. The original 
-            name for the similar dessert is <strong>Bingsu</strong>. Using <strong>condensed milk</strong> and <strong>yummy flavors</strong>, 
-            a <strong>sweet snow</strong> is produced. Topped with <strong>fresh fruits</strong> and other delicious goodies, 
-            a truly unique dessert is crafted. Come experience one of Knoxville's <strong>most loved</strong> treats!
-        </p>
-        <div class="about-images">
-            <img class="about-img about-img--one" src="snogirls.jpeg"/>
-            <img class="about-img about-img--two" src="snocup.jpeg"/>
-            <img class="about-img about-img--three" src="younggirl.jpeg"/>
-        </div>
-    </section>
-    <section class="loc-and-hours">
-        <h2 class="section-heading loc-and-hours-heading">Come See Us!</h2>
-        <div class="loc-and-hours-content">
-            <div class="hours-box">
-                <h3 class="loc-heading">Hours</h3>
-                <div class="hours">
-                    <p>Sunday 12:00PM-10:00PM</p>
-                    <p>Monday 12:00PM-10:00PM</p>
-                    <p>Tuesday 12:00PM-10:00PM</p>
-                    <p>Wednesday 12:00PM-10:00PM</p>
-                    <p>Thursday 12:00PM-10:00PM</p>
-                    <p>Friday 12:00PM-11:00PM</p>
-                    <p>Saturday 12:00PM-11:00PM</p>
+    <div class="container">
+        <header class="header">
+            <img class="header-logo" src="./sno-cream-new-logo.png" alt="Sno Cream Logo"/>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/menu">Menu</a>
+                <a href="#">Monthly Specials</a>
+            </nav>
+            <div class="nav-backdrop"></div>
+            <div class="nav-toggle">&equiv;</div>
+        </header>
+        <main>
+            <section class="hero">
+                <div id="slideshow" uk-slideshow="autoplay: true;">
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                <img class="slideshow-img" src="./slideshow_img/choco_cream-cropped.jpg"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                <img class="slideshow-img" src="./slideshow_img/blueberry_lover.jpg"/>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="loc-box">
-                <h3 class="loc-heading">Location</h3>
-                <address class="address">
-                    <p>Turkey Creek</p>
-                    <p>10911 Parkside Dr.</p>
-                    <p>Knoxville, TN 37934</p>
-                    <p>(865) 288-4136</p>
-                </address>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <small>&copy;2021 Sno Cream</small>
-        <p>Made with &hearts; by Hayden Bradfield</p>
-        <p><a class="footer-link" href="https://www.haydenbradfield.com/">www.haydenbradfield.com</a></p>
-    </footer>
+                <div class="hero-content">
+                    <div class="ml9">
+                        <span class="text-wrapper">
+                            <span class="letters">A Knoxville Favorite</span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <h2 class="section-heading about-heading">What is Sno Cream?</h2>
+                <p class="about-content">
+                    Sno Cream is an inspired name from <strong>Subling</strong>, a popular south east
+                    <strong>Asian</strong> shaved milk dessert which is originally from <strong>Korea</strong>. The original 
+                    name for the similar dessert is <strong>Bingsu</strong>. Using <strong>condensed milk</strong> and <strong>yummy flavors</strong>, 
+                    a <strong>sweet snow</strong> is produced. Topped with <strong>fresh fruits</strong> and other delicious goodies, 
+                    a truly unique dessert is crafted. Come experience one of Knoxville's <strong>most loved</strong> treats!
+                </p>
+                <div class="about-images">
+                    <img class="about-img about-img--one" src="snogirls.jpeg"/>
+                    <img class="about-img about-img--two" src="snocup.jpeg"/>
+                    <img class="about-img about-img--three" src="younggirl.jpeg"/>
+                </div>
+            </section>
+            <section class="loc-and-hours">
+                <h2 class="section-heading loc-and-hours-heading">Come See Us!</h2>
+                <div class="loc-and-hours-content">
+                    <div class="hours-box">
+                        <h3 class="loc-heading">Hours</h3>
+                        <div class="hours">
+                            <p>Sunday 12:00PM-10:00PM</p>
+                            <p>Monday 12:00PM-10:00PM</p>
+                            <p>Tuesday 12:00PM-10:00PM</p>
+                            <p>Wednesday 12:00PM-10:00PM</p>
+                            <p>Thursday 12:00PM-10:00PM</p>
+                            <p>Friday 12:00PM-11:00PM</p>
+                            <p>Saturday 12:00PM-11:00PM</p>
+                        </div>
+                    </div>
+                    <div class="loc-box">
+                        <h3 class="loc-heading">Location</h3>
+                        <address class="address">
+                            <p>Turkey Creek</p>
+                            <p>10911 Parkside Dr.</p>
+                            <p>Knoxville, TN 37934</p>
+                            <p>(865) 288-4136</p>
+                        </address>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <small>&copy;2021 Sno Cream</small>
+            <p>Made with &hearts; by Hayden Bradfield</p>
+            <p><a class="footer-link" href="https://www.haydenbradfield.com/">www.haydenbradfield.com</a></p>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>

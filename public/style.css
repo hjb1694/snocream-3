@@ -18,6 +18,14 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
+    background:#dee6e9;
+}
+
+.container{
+    max-width:150rem;
+    margin:0 auto;
+    background:#fff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .header{
@@ -141,9 +149,9 @@ display: none;
     bottom:0;
     margin:auto;
     min-width:25rem;
-    height:fit-content;
+    height:max-content;
     color:#fff;
-    font-size:8rem;
+    font-size:7rem;
     background:rgba(0,0,0,.6);
     padding:2rem;
     font-family: 'Lobster', cursive;
